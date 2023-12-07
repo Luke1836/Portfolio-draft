@@ -1,0 +1,25 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --hfs: clamp(1.75rem, 5.6vh, 2.5rem);
+}
+
+
+/* UTILITY CLASSES */
+.nowrap {
+    white-space: nowrap;
+}
+
+/* END OF THE UTILITY CLASSES */
+
+.header {
+    font-size: var(--hfs);
+    font-weight: 500;
+}
