@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400&display=swap');
 
 * {
     margin: 0;
@@ -9,6 +9,8 @@
 /* VARIABLES */
 :root {
     --hfs: clamp(1.75rem, 5.6vh, 2.5rem);
+    --margin: 1rem;
+    --padding: 1rem;
 }
 
 
