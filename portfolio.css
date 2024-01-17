@@ -1,3 +1,4 @@
+/* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400&display=swap');
 
 * {
@@ -11,9 +12,18 @@
     --hfs: clamp(1.75rem, 5.6vh, 2.5rem);
     --margin: 1rem;
     --padding: 1rem;
+    --bgcolor: #193C40;
+    --fontcolor-primary1: #9BF2EA;
+    --fontcolor-primary2: #0FC2C0;
+    --headerbgcolor: #023535;
 }
 
+/* GENERAL SYLES */
 
+html {
+    scroll-behavior: smooth;
+    background-color: var(--bgcolor);
+}
 /* UTILITY CLASSES */
 .nowrap {
     white-space: nowrap;
@@ -24,4 +34,8 @@
 .header {
     font-size: var(--hfs);
     font-weight: 500;
+    background-color: var(--headerbgcolor);
+    color: var(--fontcolor-primary2);
+    height: 100vh;
+    width: 100%;
 }
