@@ -14,11 +14,11 @@
     --margin: 1rem;
     --padding-bg: 6rem;
     --padding: 1rem;
-    --bgcolor: #142f32;
+    --bgcolor: #0a191b;
     --fontcolor-primary1: #9BF2EA;
     --fontcolor-primary2: #0FC2C0;
     --fontcolor-primary3: #EEE;
-    --headerbgcolor: #014545;
+    --headerbgcolor: #002d2d;
     --bordercolor: #005272;
     --hovereffect: #0b255972;
 }
@@ -47,7 +47,6 @@ body {
 
 .header {
     font-size: var(--hfs);
-    background-color: var(--headerbgcolor);
     color: var(--fontcolor-primary3);
     height: 80vh;
     width: 80%;
@@ -55,6 +54,7 @@ body {
 }
 
 .header-container {
+    background-color: var(--headerbgcolor);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -64,4 +64,18 @@ body {
     font-size: var(--hfs-b);
     padding: var(--padding-bg);
     border: 6px solid var(--bordercolor);
+    letter-spacing: 0.20rem;
+    line-height: 1.4;
+}
+
+.p-2 {
+    
+}
+
+.hide-container {
+    visibility: hidden;
+}
+
+.show-container {
+    visibility: visible;
 }
