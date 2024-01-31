@@ -14,11 +14,12 @@
     --margin: 1rem;
     --padding-bg: 6rem;
     --padding: 1rem;
-    --bgcolor: #0a191b;
+    --headerbgcolor:#048b8b;
+    --bgcolor: #0a1321;
     --fontcolor-primary1: #9BF2EA;
     --fontcolor-primary2: #0FC2C0;
     --fontcolor-primary3: #EEE;
-    --headerbgcolor: #002d2d;
+    --headerbgcolor: #0a1321;
     --bordercolor: #005272;
     --hovereffect: #0b255972;
     --fs-p-2: 2.5rem;
@@ -34,8 +35,6 @@ html {
 body {
     min-height: 100vh;
     max-width: 100%;
-    display: flex;
-    align-items: center;
 }
 
 /* UTILITY CLASSES */
@@ -46,26 +45,60 @@ body {
 
 /* END OF THE UTILITY CLASSES */
 
-.header {
+
+/* DYNAMIC BACKGROUND */
+
+.background {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background .layer {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+}
+
+/* END OF THE DYANMIC BACKGROUND */
+
+.hero-container {
+    max-height: 100vh;
+    max-width: 100%;
+    position: relative;
+}
+
+/* .header {
     font-size: var(--hfs);
-    color: var(--fontcolor-primary3);
+    
     height: 80vh;
     width: 80%;
     margin: auto;
     position: relative;
-}
+    z-index: 1;
+    top: 0%;
+    left: 0%;
+} */
 
 .header-container {
     position: absolute;
     top: 50%;
     left: 50%;
+    color: var(--fontcolor-primary3);
     transform: translate(-50%, -50%);
     background-color: var(--headerbgcolor);
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70vh;
+    margin: auto;
     font-family: 'Bebas Nueue', sans-serif;
     font-size: var(--hfs-b);
     padding: var(--padding-bg);
@@ -73,23 +106,11 @@ body {
     letter-spacing: 0.20rem;
     line-height: 1.4;
     text-align: center;
-    z-index: 10;
+    border-radius: 16px;
 }
 
 #p-2, #p-3 {
     font-size: var(--fs-p-2);
-}
-
-#p-1 {
-    z-index: 12;
-}
-
-#p-2 {
-    z-index: 14;
-}
-
-#p-3 {
-    z-index: 16;
 }
 
 .hide-container {
