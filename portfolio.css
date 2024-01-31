@@ -61,8 +61,8 @@ body {
 
 .background .layer {
     position: absolute;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     object-fit: cover;
 }
 
@@ -73,18 +73,6 @@ body {
     max-width: 100%;
     position: relative;
 }
-
-/* .header {
-    font-size: var(--hfs);
-    
-    height: 80vh;
-    width: 80%;
-    margin: auto;
-    position: relative;
-    z-index: 1;
-    top: 0%;
-    left: 0%;
-} */
 
 .header-container {
     position: absolute;
