@@ -35,6 +35,7 @@ html {
 body {
     min-height: 100vh;
     max-width: 100%;
+    
 }
 
 /* UTILITY CLASSES */
@@ -46,35 +47,21 @@ body {
 /* END OF THE UTILITY CLASSES */
 
 
-/* DYNAMIC BACKGROUND */
-
-.background {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    z-index: -1;
-    overflow: hidden;
+.slider {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 400vw;
 }
-
-.background .layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
-
-/* END OF THE DYANMIC BACKGROUND */
 
 .hero-container {
-    max-height: 100vh;
-    max-width: 100%;
-    position: relative;
+    overflow-x: hidden;
 }
 
-.header-container {
+.hero-container section {
+    height: 100vh;
+    width: 100%;
+}
+
+.inner {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,14 +84,43 @@ body {
     border-radius: 16px;
 }
 
-#p-2, #p-3 {
-    font-size: var(--fs-p-2);
+
+/* DYNAMIC BACKGROUND */
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+    .layer {
+        position: absolute;        
+
+        &:nth-of-type(1) { top: 10%; left: 60%; }
+        &:nth-of-type(2) { top: 20%; left: 40%; }
+        &:nth-of-type(3) { top: 60%; left: 76%; }
+        &:nth-of-type(4) { top: 10%; left: 54%; }
+        &:nth-of-type(5) { top: 80%; left: 10%; }
+        &:nth-of-type(6) { top: 55%; left: 10%; }
+        &:nth-of-type(7) { top: 10%; left: 60%; }
+        &:nth-of-type(8) { top: 10%; left: 60%; }
+        &:nth-of-type(9) { top: 10%; left: 60%; }
+        &:nth-of-type(10) { top: 10%; left: 60%; }
+        &:nth-of-type(11) { top: 10%; left: 60%; }
+        &:nth-of-type(12) { top: 10%; left: 60%; }
+        &:nth-of-type(13) { top: 10%; left: 60%; }
+        &:nth-of-type(14) { top: 10%; left: 60%; }
+        &:nth-of-type(15) { top: 10%; left: 60%; }
+        &:nth-of-type(16) { top: 10%; left: 60%; }
+        &:nth-of-type(17) { top: 10%; left: 60%; }
+        &:nth-of-type(18) { top: 10%; left: 60%; }
+        &:nth-of-type(19) { top: 10%; left: 60%; }
+        &:nth-of-type(20) { top: 10%; left: 60%; }
+        
+    }
 }
 
-.hide-container {
-    visibility: hidden;
-}
+/* END OF THE DYANMIC BACKGROUND */
 
-.show-container {
-    visibility: visible;
-}
