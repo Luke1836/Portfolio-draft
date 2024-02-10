@@ -114,7 +114,7 @@ body {
         &:nth-of-type(19) { top: 6%; left: 95%; }
         &:nth-of-type(20) { top: 87%; left: 33%; }
         &:nth-of-type(21) { top: 47%; left: 33%; }
-        &:nth-of-type(22) { top: 32%; left: 88%; }
+        &:nth-of-type(22) { top: 42%; left: 88%; }
         &:nth-of-type(23) { top: 63%; left: 33%; }
         &:nth-of-type(24) { top: 78%; left: 3%; }
         &:nth-of-type(25) { top: 27%; left: 23%; }
@@ -127,7 +127,11 @@ body {
         &:nth-of-type(32) { top: 34%; left: 11%; }
         &:nth-of-type(33) { top: 45%; left: 95%; }
         &:nth-of-type(34) { top: 76%; left: 76%; }
-        &:nth-of-type(35) { top: 88%; left: 67%; }        
+        &:nth-of-type(35) { top: 8%; left: 7%; }        
+        &:nth-of-type(36) { top: 91%; left: 16%; }
+        &:nth-of-type(37) { top: 19%; left: 77%; }
+        &:nth-of-type(38) { top: 50%; left: 61%; }
+        &:nth-of-type(39) { top: 5%; left: 57%; }        
     }
 }
 
