@@ -9,7 +9,7 @@
 
 /* VARIABLES */
 :root {
-    --hfs: clamp(1.75rem, 5.6vh, 2.5rem);
+    --hfs: clamp(1.75rem, 6.6vh, 2.75rem);
     --hfs-b: clamp(2.75rem, 8vh, 3.5rem);
     --margin: 1rem;
     --padding-bg: 6rem;
@@ -22,13 +22,26 @@
     --headerbgcolor: #0a1321;
     --bordercolor: #005272;
     --hovereffect: #0b255972;
-    --fs-p-2: 2.5rem;
+    --fs-sm: 1.75rem;
 }
 
 /* GENERAL SYLES */
 
 html {
     scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--fontcolor-primary2);
+    border-radius: 15px;
 }
 
 /* UTILITY CLASSES */
@@ -86,15 +99,8 @@ html {
     }
 }
 
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: black;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--fontcolor-primary2);
-    border-radius: 15px;
+@media screen and (max-width: 480px) {
+    .slider {
+        font-size: var(--fs-sm);
+    }
 }
