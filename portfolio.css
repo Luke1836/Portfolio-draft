@@ -15,7 +15,7 @@
     --padding-bg: 6rem;
     --padding: 1rem;
     --headerbgcolor:#048b8b;
-    --bgcolor: #0a1321;
+    --bgcolor: black;
     --fontcolor-primary1: #9BF2EA;
     --fontcolor-primary2: #0FC2C0;
     --fontcolor-primary3: #EEE;
@@ -29,13 +29,11 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: var(--bgcolor);
 }
 
 body {
     min-height: 100vh;
     max-width: 100%;
-    
 }
 
 /* UTILITY CLASSES */
@@ -44,96 +42,17 @@ body {
     white-space: nowrap;
 }
 
+#canvas1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: var(--bgcolor);
+    width: 100%;
+    height: 100%;
+    filter: blur(6px) contrast(10);
+}
+
 /* END OF THE UTILITY CLASSES */
 
 
-.slider {
-    display: flex;
-    width: 400vw;
-}
-
-.hero-container {
-    overflow-x: hidden;
-}
-
-.hero-container section {
-    height: 100vh;
-    width: 100%;
-}
-
-.inner {
-    color: var(--fontcolor-primary3);
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    width: 70%;
-    height: 100vh;
-    margin: auto;
-    font-family: 'Bebas Nueue', sans-serif;
-    font-size: var(--hfs-b);
-    padding: var(--padding-bg);
-    /* border: 6px solid var(--bordercolor); */
-    letter-spacing: 0.20rem;
-    line-height: 1.4;
-    text-align: center;
-    border-radius: 16px;
-}
-
-
-/* DYNAMIC BACKGROUND */
-
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-
-    .layer {
-        position: absolute;        
-
-        &:nth-of-type(1) { top: 5%; left: 60%; }
-        &:nth-of-type(2) { top: 20%; left: 40%; }
-        &:nth-of-type(3) { top: 60%; left: 76%; }
-        &:nth-of-type(4) { top: 20%; left: 54%; }
-        &:nth-of-type(5) { top: 17%; left: 93%; }
-        &:nth-of-type(6) { top: 55%; left: 10%; }
-        &:nth-of-type(7) { top: 29%; left: 65%; }
-        &:nth-of-type(8) { top: 4%; left: 3%; }
-        &:nth-of-type(9) { top: 90%; left: 95%; }
-        &:nth-of-type(10) { top: 35%; left: 50%; }
-        &:nth-of-type(11) { top: 85%; left: 70%; }
-        &:nth-of-type(12) { top: 7%; left: 32%; }
-        &:nth-of-type(13) { top: 34%; left: 62%; }
-        &:nth-of-type(14) { top: 67%; left: 22%; }
-        &:nth-of-type(15) { top: 86%; left: 46%; }
-        &:nth-of-type(16) { top: 63%; left: 53%; }
-        &:nth-of-type(17) { top: 56%; left: 92%; }
-        &:nth-of-type(18) { top: 90%; left: 6%; }
-        &:nth-of-type(19) { top: 6%; left: 95%; }
-        &:nth-of-type(20) { top: 87%; left: 33%; }
-        &:nth-of-type(21) { top: 47%; left: 33%; }
-        &:nth-of-type(22) { top: 42%; left: 88%; }
-        &:nth-of-type(23) { top: 63%; left: 33%; }
-        &:nth-of-type(24) { top: 78%; left: 3%; }
-        &:nth-of-type(25) { top: 27%; left: 23%; }
-        &:nth-of-type(26) { top: 54%; left: 43%; }
-        &:nth-of-type(27) { top: 73%; left: 37%; }
-        &:nth-of-type(28) { top: 20%; left: 82%; }
-        &:nth-of-type(29) { top: 67%; left: 56%; }
-        &:nth-of-type(30) { top: 12%; left: 12%; }
-        &:nth-of-type(31) { top: 23%; left: 20%; }
-        &:nth-of-type(32) { top: 34%; left: 11%; }
-        &:nth-of-type(33) { top: 45%; left: 95%; }
-        &:nth-of-type(34) { top: 76%; left: 76%; }
-        &:nth-of-type(35) { top: 8%; left: 7%; }        
-        &:nth-of-type(36) { top: 91%; left: 16%; }
-        &:nth-of-type(37) { top: 19%; left: 77%; }
-        &:nth-of-type(38) { top: 50%; left: 61%; }
-        &:nth-of-type(39) { top: 5%; left: 57%; }        
-    }
-}
-
-/* END OF THE DYANMIC BACKGROUND */
 
