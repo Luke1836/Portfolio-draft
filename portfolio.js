@@ -176,7 +176,7 @@ class Effect
         this.width = width;
         this.height = height;
         context.fillStyle = gradient;
-        context.strokeStyle = 'whitesmoke';
+        context.strokeStyle = 'transparent';
         context.lineWidth = 2;
         this.particles.forEach(particle => {
             particle.reset();

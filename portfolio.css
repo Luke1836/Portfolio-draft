@@ -31,15 +31,11 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    min-height: 100vh;
-    max-width: 100%;
-}
-
 /* UTILITY CLASSES */
 
 .nowrap {
     white-space: nowrap;
+    display: block;
 }
 
 #canvas1 {
@@ -54,5 +50,28 @@ body {
 
 /* END OF THE UTILITY CLASSES */
 
+.hero-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.slider {
+    position: absolute;
+    font-size: var(--hfs);
+    color: var(--fontcolor-primary3);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.hero-container section {
+    width: 100%;
+    height: 100%;
+}
 
 
