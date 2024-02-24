@@ -85,3 +85,16 @@ html {
         filter: contrast(3) saturate(5);
     }
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--fontcolor-primary2);
+    border-radius: 15px;
+}
